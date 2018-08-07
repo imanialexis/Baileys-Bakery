@@ -1,1 +1,15 @@
-Something
+<div class="treat-master-container">
+
+    <% @all_cakes.each do |cake|%>
+
+    <div class="treat-card">
+
+        <img src="<%= cake.photo %>" height="300" width="300">
+
+        <h2 class="large"> <%= cake.name %> </h2>
+
+        <p class = "small"> <%= cake.describe %> </p>
+        <p class = 'xsmall'><strong><%= cake.price %></strong></p>
+    </div>
+    <% end %>
+</div>

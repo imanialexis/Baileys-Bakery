@@ -1,1 +1,15 @@
-Something
+<div class="treat-master-container">
+
+    <% @all_muffins.each do |muffin|%>
+
+    <div class="treat-card">
+
+        <img src="<%= muffin.photo %>" height="300" width="300">
+
+        <h2 class="large"> <%= muffin.name %> </h2>
+
+        <p class = "small"> <%= muffin.describe %> </p>
+        <p class = 'xsmall'><strong><%= muffin.price %></strong></p>
+    </div>
+    <% end %>
+</div>
